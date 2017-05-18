@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divece-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" href="css/teste.min.css">
+    <link rel="stylesheet" href="css/jquery.mobile.icons.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">-->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  </head>
+   <body>
+        <div data-role="header" data-position="fixed">
+        <a href="CandidatoPerfil.html" rel="external" class="ui-btn ui-corner-all ui-icon-carat-l ui-btn-icon-notext"></a>
+        <a href="CandidatoMenu.html" rel="external" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext"></a>
+        <h1>Curriculo</h1>
+      </div>
+
+        <div data-role="main">
+        <form method="post" action="cadastro/candidato" name="meu_form">
+        
+         <ul data-role="listview" data-inset="true">
+        <li data-role="list-divider">
+          <h3 align="center"><b>Dados pessoais</b></h3>
+        </li>
+        <li>
+
+          <label for="Nome">Nome completo: </label>
+          <input type="text" name="nmcandidato" id="Nome" required>
+        
+             <label for="NASC">Data de nascimento:</label>
+              <input type="date" name="dtnascimento" id="NASC" required>
+        
+               <label for="EMAIL">E-mail:</label>
+               <input type="email" name="EMAIL" id="EMAIL" required>
+       
+        <label for="estadocivil">Estado civil:</label>
+            <select name="estadocivil">
+            </select>
+        
+            <label for="RG">RG:</label>
+            <input type="text" name="RG" id="RG" size="13" maxlength="13" required>
+        
+              <label for="CPF">CPF:</label>
+              <input type="text" name="CPF" size="11" maxlength="11" required>
+        
+
+           <fieldset data-role="controlgroup">
+           <legend>Sexo:</legend>
+           <label for="MASC">Masculino</label>
+           <input type="radio" name="gender" id="MASC" value="MASC">
+           <label for="FEM">Feminino</label>
+           <input type="radio" name="gender" id="FEM" value="FEM">
+           </fieldset>
+        
+                 <label for="estado">Estado:</label>
+                  <select name="estado"> 
+                   </select>
+           
+             <label for="cidade">Cidade: </label>
+              <input type="text" name="cidade" id="cidade" required>
+      
+             <label for="END">Endereço:</label>
+             <textarea name="END" id="END" required></textarea>
+      
+                <label for="CEP">CEP: </label>
+                <input type="text" name="CEP" size="8" maxlength="8" required> 
+      
+              <label for="TEL">Telefone:</label>
+              <input type="TEL" name="TEL" id="TEL" required>
+     
+              <label for="CEL">Celular:</label>
+              <input type="tel" name="CEL" id="CEL" required>
+           </li>
+          <li data-role="list-divider">
+             <h3 align="center"><b>Formação acadêmica</b></h3>
+          </li> 
+          <li>
+          <label for="formacao">Escolaridade:</label>
+            <select name="formacao" id="ESC">
+              
+            </select>
+       
+        <label for="CUR">Curso:</label>
+        <input type="text" name="CUR" id="CUR" required> 
+
+           <label for="Dinicio">Data de inicio:</label>
+           <input type="date" name="Dinicio" id="Dinicio" required>
+
+            <label for="Dconclusao">Data de conclusão:</label>
+            <input type="date" name="Dconclusao" id="Dconclusao" required>
+
+            <label for="NDI"> Nome da instituição:</label>
+            <input type="text" name="NDI" id="NDI" required> 
+
+           <label for="estado">Estado:</label>
+                  <select name="estado"> 
+                  
+                 </select>
+
+              <label for="cidade">Cidade: </label>
+              <input type="text" name="cidade" id="cidade" required>
+      
+           </li>
+           <li data-role="list-divider">
+           <h3 align="center"><b>Experiência profissional</b></h3>
+           </li> 
+           <li>
+     
+         <label for="Pe">Primeiro emprego:</label>
+         <input type="checkbox" name="favcolor" id="Pe" value="Pe"> 
+       
+        <label for="EMP">Empresa:</label>
+        <input type="text" name="EMP" id="EMP">
+
+        <label for="CAR">Cargo:</label>
+        <input type="text" name="CAR" id="CAR">
+
+        <label for="AD">Atividades desenvolvidas:</label>
+        <textarea name="addinfo" id="AD"></textarea>
+
+        <label for="DADIMISSAO">Data Admissão:</label>
+         <input type="date" name="DADIMISSAO" id="DADIMISSAO">
+
+         <label for="DSAIDA">Data Sáida:</label>
+         <input type="date" name="DSAIDA" id="DSAIDA">
+       </li>
+    </ul>
+                  
+        <div class="ui-grid-b">
+            <div class="ui-block-a ui-bar-#FFF">
+              <a href="CandidatoMenu.html" class="ui-btn" style="border-radius:5px;">Cancelar</a>
+            </div>
+            <div class="ui-block-b ui-bar-#FFF">
+            </div>
+            <div class="ui-block-c ui-bar-#FFF">
+              <input type="submit" data-inline="false" name="BtnSalvar" value="Salvar" onClick="validarFormulario();">
+            </div>
+        </div>
+     </form> 
+   </div>
+            <div data-role="footer" data-position="fixed">
+              <h1>Copyright © 2017 Emprega Fácil</h1>
+           </div>
+		   <script src="js/servicos.js"></script>
+		   <script src="js/cadastrese.js"></script>
+		   <script src="js/jquery.serializejson.min.js"></script>
+  </body>
+</html>

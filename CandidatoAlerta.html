@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divece-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" href="css/teste.min.css">
+    <link rel="stylesheet" href="css/jquery.mobile.icons.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  </head>
+   <body>
+    <div data-role="header" data-position="fixed">
+        <a href="#overlayPanel" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>
+        <a href="CandidatoMenu.html" rel="external" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext"></a>
+
+        <h1>Alerta</h1>
+        </div>
+
+      <div data-role="panel" id="overlayPanel" data-display="overlay" >
+        
+        <ul data-role="listview">
+          <div align="center">
+	      <img src="imagens/logos.png" width="186" height="100" alt="">
+          </div><br>
+          <li data-icon="false"><a href="CandidatoMenu.html" rel="external">Pagina Inicial</a>
+          </li>
+          <li data-icon="false"><a href="CandidatoPerfil.html" rel="external">Perfil</a>
+          </li>
+          <li data-icon="false"><a href="CandidatoPesquisa.html" rel="external">Pesquisa vagas</a>
+          </li>
+          <li data-icon="false"><a href="CandidatoMessagem.html" rel="external">Mensagem</a>
+          </li>
+          <li data-icon="false"><a href="CandidatoHistorico.html" rel="external">Histórico</a>
+          </li>
+          <li data-icon="false"><a href="CandidatoConfiguracoes.html" rel="external">Configurações</a>
+          </li>
+          <li data-icon="false"><a href="CandidatoAjuda.html" rel="external">Ajuda</a>
+          </li>
+          <li data-icon="false"><a href="#pageone" rel="external" data-rel="close">Fechar</a>
+          </li>
+        </ul>
+      </div>
+	  
+	   <div data-role="main">
+        <form method="post" action="/action_page_post.php">
+
+         <ul data-role="listview" data-inset="true">
+        <li data-role="list-divider">
+          <h3 align="center"><b>Vagas</b></h3>
+        </li>
+        <li>
+
+            <label for="SAL">Salário:</label>
+            <select name="SAL" id="SAL">
+              <option value="NOV">R$900.00</option>
+              <option value="MIL">R$1000.00</option>
+              <option value="MIQ">R$1500.00</option>
+              <option value="DOMI">R$2000.00</option>
+              <option value="DOMIQ">R$2500.00</option>
+              <option value="MAIOR">Maior que R$2500.00</option>  
+		  </select>
+
+            <label for="estado">Estado:</label>
+                  <select name="estado"> 
+                  <option value="ac">Acre</option> 
+                  <option value="al">Alagoas</option> 
+                  <option value="am">Amazonas</option> 
+                  <option value="ap">Amapá</option> 
+                  <option value="ba">Bahia</option> 
+                  <option value="ce">Ceará</option> 
+                  <option value="df">Distrito Federal</option> 
+                  <option value="es">Espírito Santo</option> 
+                  <option value="go">Goiás</option> 
+                  <option value="ma">Maranhão</option> 
+                  <option value="mt">Mato Grosso</option> 
+                  <option value="ms">Mato Grosso do Sul</option> 
+                  <option value="mg">Minas Gerais</option> 
+                  <option value="pa">Pará</option> 
+                  <option value="pb">Paraíba</option> 
+                  <option value="pr">Paraná</option> 
+                  <option value="pe">Pernambuco</option> 
+                  <option value="pi">Piauí</option> 
+                  <option value="rj">Rio de Janeiro</option> 
+                  <option value="rn">Rio Grande do Norte</option> 
+                  <option value="ro">Rondônia</option> 
+                  <option value="rs">Rio Grande do Sul</option> 
+                  <option value="rr">Roraima</option> 
+                  <option value="sc">Santa Catarina</option> 
+                  <option value="se">Sergipe</option> 
+                  <option value="sp">São Paulo</option> 
+                  <option value="to">Tocantins</option> 
+                 </select>
+
+             <label for="cidade">Cidade: </label>
+            <input type="text" name="cidade" id="cidade">
+
+            <label for="LOC">Localização:</label>
+            <select name="LOC" id="LOC">
+              <option value="1KM">1km de distância</option>
+              <option value="2KM">2km de distância</option>
+              <option value="5KM">5km de distância</option>
+              <option value="10KM">10km de distância</option>
+              <option value="15KM">15km de distância</option>
+              <option value="20KM">20km de distância</option>
+              <option value="50KM">50km de distância</option>
+            </select>
+
+          <fieldset data-role="controlgroup">
+            <label for="PDC">Vagas para PDC:</label>
+            <input type="checkbox" name="favcolor" id="PDC" value="PDC">
+            <label for="IDO">Vagas para IDO:</label>
+            <input type="checkbox" name="favcolor" id="IDO" value="IDO">
+          </fieldset>
+
+         </li>
+        </ul>
+
+          <div class="ui-grid-b">
+            <div class="ui-block-a ui-bar-#FFF">
+              <a href="#Menu" class="ui-btn" style="border-radius:5px;">Cancelar</a>
+            </div>
+            <div class="ui-block-b ui-bar-#FFF">
+            </div>
+            <div class="ui-block-c ui-bar-#FFF">
+              <input type="submit" data-inline="false" value="Criar">
+            </div>
+
+          </div>
+
+        </form>
+      </div>
+  
+      <div data-role="footer" data-position="fixed">
+        <h1>Copyright © 2017 Emprega Fácil </h1>
+      </div>  
+ 
+  
+  </body>
+</html>

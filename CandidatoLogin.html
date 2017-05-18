@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divece-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" href="css/teste.min.css">
+    <link rel="stylesheet" href="css/jquery.mobile.icons.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">-->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  </head>
+  <body>
+
+    <div data-role="header" data-position="fixed">
+        <h1>Emprega Fácil</h1>
+      </div>
+      <form action="/action_page.php">
+
+        <div class="container">
+          <label for="usr"><b>Usúario:</b></label>
+          <input type="text" name="user" id="usr" placeholder="CPF ou E-mail">
+          <label for="pswd"><b>Senha:</b></label>
+          <input type="password" name="passw" id="pswd" placeholder="Senha">
+          <label for="lemb">Lembrar-me</label>
+          <input type="checkbox" name="login" id="lemb" value="1" data-mini="true">
+          <label for="Mconct">Manter-me conectado</label>
+          <input type="checkbox" name="login" id="Mconct" value="1" data-mini="true">
+          <span class="psw" style="float: left;"><a href="#">Esqueci minha senha.</a></span><br><br>
+		  <p>Cadastre-se <a href="cadastre_se.html"> aqui.</a>		  <br>
+          <br>
+          <br>
+          <div class="ui-grid-b">
+            <div class="ui-block-a ui-bar-#FFF" >
+              <a href="index.html" class="ui-btn ui-mini" onclick="javascript:window.close()" style="border-radius:5px; 
+          background-color:#fff">Sair</a> 
+              <!-- <input type="button" value="Fechar" onclick="javascript:window.close()"> -->
+            </div>
+            <div class="ui-block-b ui-bar-#FFF">
+            </div>
+            <div class="ui-block-c ui-bar-#FFF">
+              <!-- <input type="submit" data-inline="true" value="Entrar">-->
+              <a href="CandidatoMenu.html" class="ui-btn ui-mini" style="border-radius:5px; 
+          background-color:#fff" rel="external">Entrar</a> 
+            </div>
+          </div>
+       </div>
+      </form>
+      <div data-role="footer" data-position="fixed">
+        <h1>Copyright © 2017 Emprega Fácil</h1>
+      </div>
+    </div>
+	<script src="js/servicos.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=divece-width, initial-scale=1">
+      <title></title>
+      <link rel="stylesheet" type="text/css" href="css/login.css">
+      <link rel="stylesheet" href="css/teste.min.css">
+      <link rel="stylesheet" href="css/jquery.mobile.icons.min.css">
+      <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css">
+	  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js">
+      <!--<link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">-->
+      <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+      <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+   </head>
+   <body>
+      <div data-role="header" data-position="fixed">
+         <a href="EmpresaPerfil.html" rel="external" class="ui-btn ui-corner-all ui-icon-carat-l ui-btn-icon-notext"></a>
+         <a href="EmpresaMenu.html" rel="external" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext"></a>
+         <h1>Atualizar dados</h1>
+      </div>
+      <div data-role="main">
+         <form name=meuform method="POST">
+            <ul data-role="listview" data-inset="true">
+               <li data-role="list-divider">
+                  <h3 align="center"><b>Dados da empresa</b></h3>
+               </li>
+               <li>
+                  <label for="NomeE">Nome: </label>
+                  <input type="text" name="nome" id="nome">
+                  <label for="NomeE">Razão social: </label>
+                  <input type="text" name="razaosocial" id="razaosocial">
+                  <label for="CPFeCNPJ">CPF ou CNPJ: </label>
+                  <input type="text" name="cnpj" id="cnpj">
+                  <label for="IEeRG">IE ou RG: </label>
+                  <input type="text" name="ie" id="ie">
+                  <label for="day">Quantidade de funcionários:</label>
+                  <select name="day" id="day">
+                    
+                  </select>
+                  <label for="info">Endereço:</label>
+                  <textarea name="endereco" id="endereco"></textarea>
+                  <label for="estado">Estado:</label>
+                  <select name="estado">
+                     
+                  </select>
+                  <label for="cidade">Cidade: </label>
+                  <input type="text" name="cidade" id="cidade">
+                  <label for="cep">CEP: </label>
+                  <input type="text" name="cep" id="cep" size="8" maxlength="8"> 
+                  <label for="Tel">Telefone:</label>
+                  <input type="tel" name="Tel" id="Tel" size=">
+                  <label for="email">E-mail:</label>
+                  <input type="email" name="email" id="email">
+                  <label for="Site">Site:</label>
+                  <input type="text" name="Site" id="Site">
+               </li>
+            </ul>
+            <div class="ui-grid-b">
+               <div class="ui-block-a ui-bar-#FFF">
+                  <a href="EmpresaLogin.html" rel="external" class="ui-btn" style="border-radius:5px;">Cancelar</a>
+               </div>
+               <div class="ui-block-b ui-bar-#FFF">
+               </div>
+               <div class="ui-block-c ui-bar-#FFF">
+                  <input type="submit" data-inline="false" value="Salvar" name="btnSalvar" onclick="validarFormulario();">
+               </div>
+            </div>
+         </form>
+      </div>
+      <div data-role="footer" data-position="fixed">
+         <h1>Copyright © 2017 Emprega Fácil</h1>
+      </div>
+		<script src= "js/jquery.serializejson.min.js"></script>
+		<script src="js/servicos.js"></script>
+		<script src="js/empresa_html.js"></script>
+		<script src="js/cadastro_empresa.js"></script>
+   </body>
+</html>
